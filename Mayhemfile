@@ -3,7 +3,7 @@ target: fuzz_borsh-rs
 duration: 300
 
 tests:
-  - file:
+  - file:///home/mayhem/tests
 
 cmds:
   - cmd: /afl

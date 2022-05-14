@@ -15,6 +15,7 @@ RUN cargo install afl
 
 # Copy the compiled target and the input cases
 COPY --from=rust-builder /borsh-rs/afl/target/debug/afl /borsh-rs/afl/in /
+RUN mkdir -p /home/mayhem/tests
 
 # Set to fuzz!
 ENTRYPOINT ["cargo", "afl", "fuzz", "-i", "/in", "-o", "/out"]
