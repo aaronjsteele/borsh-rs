@@ -1,0 +1,12 @@
+project: borsh-rs
+target: fuzz_borsh-rs
+duration: 300
+
+tests:
+  - file:
+
+cmds:
+  - cmd: /afl
+    env:
+      DISABLE_SMOKETEST: '1'
+    afl: true
