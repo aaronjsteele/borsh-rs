@@ -10,3 +10,4 @@ cmds:
     env:
       DISABLE_SMOKETEST: '1'
     afl: true
+    timeout: 10
