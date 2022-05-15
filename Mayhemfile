@@ -2,9 +2,6 @@ project: borsh-rs
 target: fuzz_borsh-rs
 duration: 300
 
-tests:
-  - file:///home/mayhem/tests
-
 cmds:
   - cmd: /afl
     env:
